@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="main-buttons">
+      <button id="add-a-book" type="button">Add a book</button>
+      <button id="library-button" type="button">Your library</button>
+    </div>
+
+    <div>
+      <form id="form" style="display: none">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Book title" />
+
+        <label for="author">Author</label>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          placeholder="Book author"
+        />
+
+        <label for="page-number">Number of pages</label>
+        <input
+          type="text"
+          id="page-number"
+          name="page-number"
+          placeholder="How many pages does the book have?"
+        />
+
+        <label for="status">Did you read that book?</label>
+        <select id="status" name="status">
+          <option value="read">Yes</option>
+          <option value="not read">No</option>
+        </select>
+
+        <button id="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="library" style="display: none"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
